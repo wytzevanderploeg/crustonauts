@@ -1,0 +1,14 @@
+[package]
+name = "crustonauts"
+version = "0.1.0"
+authors = ["Wytze van der Ploeg"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# Rocket REST dependency
+rocket = "0.4.6"
+rocket_contrib = "0.4.6"
+# Serialization library, here we include the derive feature which is a macro for Serialization/Deserialization
+serde = { version  = "1.0.123", features = ["derive"] }
